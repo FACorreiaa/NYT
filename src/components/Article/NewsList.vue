@@ -1,5 +1,11 @@
 <template>
   <ul class="list-group col-md-8 text-center">
+    <!-- <b-pagination
+      v-model="articles"
+      :total-rows="rows"
+      :per-page="page"
+      aria-controls="my-table"
+    ></b-pagination> -->
     <NewsListItem
       v-for="article in articles"
       :article="article"
