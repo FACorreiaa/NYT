@@ -1,17 +1,17 @@
 <template>
   <div class="bg-light">
-    <div class="fluid-container footer text-footer">
+    <div class="footer text-footer">
       <div class="row">
         <div class="col">
-          <h5>Email</h5>
+          <h6 class="font-weight-bold">Email</h6>
         </div>
 
         <div class="col">
-          <h5>Contact</h5>
+          <h6 class="font-weight-bold">Contact</h6>
         </div>
 
         <div class="col">
-          <h5>Social Media</h5>
+          <h6 class="font-weight-bold">Social Media</h6>
         </div>
       </div>
 

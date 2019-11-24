@@ -1,23 +1,34 @@
 <template>
-  <div>
-    <div class="container">
-      <!-- <div>
-        <b-input-group prepend="Search your news" class="mb-2">
-          <b-form-input aria-label="news" @input="onInput"></b-form-input>
-        </b-input-group>
-      </div> -->
-      <input @input="onInput" />
-    </div>
+  <div class="input-group mb-3">
+    <input
+      type="text"
+      class="form-control"
+      placeholder="Search for your Article here"
+      aria-label="Username"
+      aria-describedby="basic-addon1"
+      @input="onInput"
+    />
   </div>
 </template>
 
 <script>
 export default {
   name: 'SearchBar',
-  method: {
+  methods: {
     onInput: function(event) {
-      this.$emit('newsChange', event.target.value);
+      this.$emit('termChange', event.target.value);
     }
   }
 };
 </script>
+
+<style scoped>
+input {
+  width: 75%;
+}
+
+div {
+  text-align: center;
+  margin: 20px;
+}
+</style>

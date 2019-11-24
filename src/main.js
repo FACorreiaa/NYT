@@ -7,7 +7,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css';
 
 import LandingPage from './components/LandingPage';
 import WelcomePage from './components/WelcomePage';
-import NewsPage from './components/NewsPage';
+import NewsPage from './components/Article/NewsPage';
 Vue.use(BootstrapVue);
 Vue.use(VueRouter);
 Vue.config.productionTip = false;
